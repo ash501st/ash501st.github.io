@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+  font-family: Roboto, sans-serif;
+  background-color: #d3d3d3;
+}
+
+.sub-title {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 0;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+header {
+    background-color: #2e86de;
+    color: white;
+    padding: 1rem 0;
+    width: 100%;
+    margin: 0;
+    border: none;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #2e86de;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.menu-btn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+nav a {
+    display: none;
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+}
+
+section {
+    display: contents;
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+}
+
+nav a {
+    padding: 20px;
+    color: white;
+    display: none;
+}       
+
+@media screen and (min-width: 700px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .menu-btn {
+        display: none;
+    }
+    nav a {
+        display: inline;
+    }
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}      
