@@ -1,0 +1,150 @@
+html, body {
+    height: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+#main-content {
+    flex: 1 0 auto;
+}
+footer {
+    flex-shrink: 0;
+    border-top: 2px solid #f2994a;
+    padding: 1rem 0;
+    text-align: center;
+}
+footer p {
+    color: #333;
+    margin: 0;
+    font-size: 0.9rem;
+}
+header {
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 2px solid #f2994a; 
+}
+header h1 {
+    font-family: 'Georgia', serif;
+    color: #5c1d3d;
+    margin: 10px 0 15px 0;
+    font-size: 2rem;
+}
+nav[aria-label="main menu"] {
+    border-top: 2px solid #f2994a;
+    border-bottom: 2px solid #f2994a;
+    padding: 12px 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 40px; 
+}
+.main-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+.main-nav li {
+    margin-left: 20px;
+}
+.main-nav a {
+    color: #c0392b;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+#book-list {
+    padding: 0 1rem;
+}
+.book {
+    max-width: 900px;
+    margin: 25px auto 30px auto;
+    display: flex;
+    flex-direction: column;
+}
+.book-meta {
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #000;
+    font-size: 0.9rem;
+}
+.book-meta p {
+    margin: 2px 0;
+}
+.book-meta .date {
+    font-style: italic;
+}
+.book-content h2 {
+    font-family: 'Georgia', serif;
+    color: #c0392b;
+    font-size: 1.6rem;
+    text-align: left;
+    margin: 0 0 15px 0;
+}
+.book-content img {
+    max-width: 240px;
+    width: 100%;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+#desc {
+    font-size: 1rem;
+    text-align: left;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    
+    header {
+        border-bottom: none; 
+    }
+    nav[aria-label="main menu"] {
+        padding: 12px 0;
+        margin-bottom: 40px; 
+    }
+    .main-nav {
+        max-width: 1100px; 
+        margin: 0 auto;
+        padding-right: 40px;
+    }
+    .main-nav li {
+        margin-left: 40px;
+    }
+    .book {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 40px;
+        margin-top: 40px;
+    }
+    .book-meta {
+        text-align: right;
+        padding-right: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .book-content {
+        border-left: 1px solid #f2994a;
+        padding-left: 40px;
+    }
+
+    .book-content h2 {
+        margin-top: 0;
+    }
+
+    .book-content img {
+        margin: 0 auto 20px auto;
+    }
+}
