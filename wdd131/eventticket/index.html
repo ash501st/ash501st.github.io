@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ashton Canepari">
+    <meta name="description" content="Event Ticket Form">
+    <title>Event Ticket</title>
+    <link rel="icon" type="image/jpeg" href="favicon.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Event Ticket</h2>
+        <form id="ticketForm">
+            <div class="row">
+                <div class="input-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" required>
+                </div>
+                <div class="input-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" required>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <label for="type">Type</label>
+                    <select id="type" required>
+                        <option value="">Choose one</option>
+                        <option value="student">Student</option>
+                        <option value="guest">Guest</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="eventDate">Event Date</label>
+                    <input type="date" id="eventDate" required>
+                </div>
+            </div>
+            <div id="conditionalGroup" class="input-group-full hidden">
+                <label id="conditionalLabel" for="conditionalInput"></label>
+                <input type="text" id="conditionalInput">
+            </div>
+            <button type="submit" id="submitBtn">Create Ticket</button>
+        </form>
+        <div id="messageBox"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
