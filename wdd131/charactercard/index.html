@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ashton Canepari">
+    <meta name="description" content="Character Card">
+    <title>Liara T'Soni Character Card</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Liara T'Soni Character Card">
+    <meta property="og:description" content="Role Playing Game Character Card">
+    <meta property="og:url" content="https://ash501st.github.io/wdd131/charactercard/index.html">
+    <meta property="og:image" content="https://ash501st.github.io/wdd131/charactercard/images/liara-profile.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="character_card_image">
+    <meta name="twitter:title" content="Liara T'Soni Character Card">
+    <meta name="twitter:description" content="Role Playing Game Character Card">
+    <meta name="twitter:image" content="https://ash501st.github.io/wdd131/charactercard/images/liara-profile.jpg">
+
+    <!-- One favicon (ICO words everywhere) -->
+    <link href="/images/favicon.ico" rel="icon" type="image/x-icon">
+
+    <!-- One Apple Touch Icon (iOS home screen) -->
+     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+</head>
+<body>
+    <main>
+        <div class="card">
+            <img src="images/liara-profile.jpg" alt="Liara T'Soni" class="image">
+            <h2 class="name" id="char-name">Liara T'Soni</h2>
+            <div class="stats">
+                <p> Class: <span id="char-class">Biotic Researcher</span></p>
+                <p>Level: <span id="char-level">1</span></p>
+                <p>Health: <span id="char-health">100</span></p>
+            </div>
+            <div class="buttons">
+                <button id="btn-attack">Attacked</button>
+                <button id="btn-level">Level Up</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
